@@ -43,14 +43,12 @@ let App = () => {
       <ul>
         {users.map((user, i) => (
           <li key={i}>
-
             <div id="fullName">
+              <img src={user.pic} alt={"avitar"}></img>
               {user.name}
               <Toggle id={i} />
             </div>
-
             <div id={i} className={"Hide"}>
-              <div><img src={user.pic} alt={"avitar"}></img></div>
               <div className={"detail"}>{user.phone}</div>
               <div className={"detail"}>{user.email}</div>
             </div>
